@@ -1,6 +1,6 @@
 package part1;
 
-public class Parser {
+class Parser {
     // String input (eg: "2+3")
     private String text;
     // Keeps an index of the current position in the input
@@ -8,7 +8,7 @@ public class Parser {
     // Current token instance
     private Token currentToken;
 
-    public Parser(String text) {
+    Parser(String text) {
         this.text = text;
         this.pos = 0;
         this.currentToken = null;
@@ -71,7 +71,7 @@ public class Parser {
     Tries to identify the structure "INTEGER PLUS INTEGER"
     expr -> INTEGER PLUS INTEGER
      */
-    public int expr() {
+    int expr() {
         // Set the current token to the first token taken from the input
         this.currentToken = getNextToken();
 

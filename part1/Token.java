@@ -10,23 +10,23 @@ enum Type {
     EOF
 }
 
-public class Token {
+class Token {
     // token type: INTEGER, PLUS, or EOF
     private Type type;
     // token value: 0, 1, 2. 3, 4, 5, 6, 7, 8, 9, '+', or null
     private Object value;
 
 
-    public Token(Type type, Object value) {
+    Token(Type type, Object value) {
         this.type = type;
         this.value = value;
     }
 
-    public Type getType() {
+    Type getType() {
         return type;
     }
 
-    public Object getValue() {
+    Object getValue() {
         return value;
     }
 }
