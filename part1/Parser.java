@@ -1,6 +1,6 @@
 package part1;
 
-public class Interpreter {
+public class Parser {
     // String input (eg: "2+3")
     private String text;
     // Keeps an index of the current position in the input
@@ -8,7 +8,7 @@ public class Interpreter {
     // Current token instance
     private Token currentToken;
 
-    public Interpreter(String text) {
+    public Parser(String text) {
         this.text = text;
         this.pos = 0;
         this.currentToken = null;

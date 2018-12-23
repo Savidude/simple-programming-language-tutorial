@@ -9,8 +9,8 @@ public class Main {
         System.out.print("calc> ");
         String input = sc.nextLine();
 
-        Interpreter interpreter = new Interpreter(input);
-        int result = interpreter.expr();
+        Parser parser = new Parser(input);
+        int result = parser.expr();
         System.out.println(result);
     }
 }
