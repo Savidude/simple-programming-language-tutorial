@@ -1,4 +1,4 @@
-package part2;
+package part3;
 
 class Lexer {
     // String input (eg: "2+3")
